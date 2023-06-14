@@ -1,0 +1,148 @@
+/* Estilizando a tag <main> */
+main{
+    height: 100vh;
+    width: 100%;
+    background: hsla(230, 85%, 62%, 1);
+    background: linear-gradient(360deg, hsla(230, 85%, 62%, 1) 0%, hsla(198, 72%, 61%, 1) 50%, hsla(168, 77%, 60%, 1) 100%);
+    background: -moz-linear-gradient(360deg, hsla(230, 85%, 62%, 1) 0%, hsla(198, 72%, 61%, 1) 50%, hsla(168, 77%, 60%, 1) 100%);
+    background: -webkit-linear-gradient(360deg, hsla(230, 85%, 62%, 1) 0%, hsla(198, 72%, 61%, 1) 50%, hsla(168, 77%, 60%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4A67F0", endColorstr="#52B7E3", GradientType=1 );
+    display: flex;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+/* Estilizando a seção de recuperação de senha */
+#area-esqueci-senha{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+
+/* Estilizando os inputs do formulário */
+#area-esqueci-senha form input{
+    width:100%;
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+    height: 50px;
+    border-bottom: 1px solid #FFFFFF;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilizando o foco nos inputs do formulário */
+#area-esqueci-senha form input:focus{
+    outline: none;
+}
+
+/* Estilizando o texto de placeholder dos inputs */
+#area-esqueci-senha form input::placeholder{
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+/* Estilizando o botão de envio do formulário */
+#area-esqueci-senha form input[type="submit"]{
+    background-color: #4A67F0;
+    width: 50%;
+    border: 0;
+    border-radius: 16px;
+    font-size: 1rem;
+}
+
+/* Estilizando o hover do botão de envio do formulário */
+#area-esqueci-senha form input[type="submit"]:hover{
+    background-color: #4AF0C7;
+}
+
+/* Estilizando o elemento <small> */
+small{
+    position: absolute;
+    width: 955px;
+    height: 27px;
+    left: 49px;
+    top: 430px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration-line: underline;
+    
+    color: #FFFFFF;
+}
+
+/* Estilizando o link dentro do formulário */
+#area-esqueci-senha form a{
+    text-decoration: none;
+    color:#FFFFFF;
+    margin-left: 10px;
+    font-size: 0.7rem;
+    width: 100%;
+}
+
+/* Estilizando o titulo da página */
+h1{
+    font-size: 4rem;
+    font-weight: 800;
+    justify-self: center;
+    margin-bottom: 50px;
+}
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: 
+  #ffffff;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 82px;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: 
+  #fbfbfb;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  /* Media queries para desktop */
+@media screen and (min-width: 1024px) {
+    /* Seu código CSS específico para desktop aqui */
+    main {
+      /* Exemplo de alteração para desktop */
+      height: 100%;
+    }
+  }
+  
+  /* Media queries para tablet */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Seu código CSS específico para tablet aqui */
+    main {
+      /* Exemplo de alteração para tablet */
+      height: 60vh;
+    }
+  }
+  
+  /* Media queries para celular */
+  @media screen and (max-width: 767px) {
+    /* Seu código CSS específico para celular aqui */
+    main {
+      /* Exemplo de alteração para celular */
+      height: auto;
+    }
+  }

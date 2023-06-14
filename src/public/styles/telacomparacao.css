@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+header{
+  width: 100%;
+}
+
+.topo{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;    
+  padding: 0 2%;
+  box-sizing: border-box;
+}
+
+.weadline{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+header .topo .logo{
+  width: 9%;
+}
+
+header .topo .logo img {
+  width: 100%;
+  cursor: pointer;
+}
+
+nav{
+  width: 100%;
+}
+
+nav ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #52B7E3;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 20px;
+}
+
+nav ul li a:hover{
+  text-decoration: underline
+}
+
+button{
+  top: 50px;
+};
+
+header .topo .icone-logout{
+  cursor: pointer;
+
+}
+
+header .topo .icone-logout img{
+  width: 80%;
+  margin-right: 60%;
+}
+
+header 
+    .topo .abreajuda{
+    background-color: #52B7E3;
+    border-radius: 50%;
+    width: 4%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin-left: 0.5%;
+    border: 0rem;
+}
+
+.tittle {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-section,
+.right-section {
+  width: 48%;
+  margin-top: 5%;
+}
+
+.dropdown-viagem1,
+.dropdown-viagem2 {
+  margin-bottom: 20px;
+}
+
+.mapa1,
+.mapa2,
+.informacoes-viagem1,
+.informacoes-viagem2,
+.grafico1,
+.grafico2 {
+  border: 2px solid #52B7E3;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.bordered-box h3 {
+  margin: 0;
+}
+
+.dropdown-menu.dropdown-menu-blue {
+  background-color: #52B7E3;
+}
+
+.dropdown-menu.dropdown-menu-blue .dropdown-item {
+  color: #fff;
+}
+
+.dropdown-menu.dropdown-menu-blue .dropdown-item:hover {
+  background-color: #0C92B5;
+  color: #fff;
+}
+.dropdown-viagem1,
+.dropdown-viagem2,
+.dropdown-engate,
+.dropdown-choque {
+  margin-bottom: 20px;
+}
+
+.dropdown-engate {
+  margin-top: 10px;
+}
+
+.dropdown-menu.dropdown-menu-blue .dropdown-item {
+  color: #fff;
+  width: 100%;
+  white-space: normal;
+  text-align: left;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+}
+
+.sidebar {
+  width: 45vh;
+  background-color: #4A67F0;
+  padding: 20px;
+  margin-left: auto; 
+  border-radius: 16px;
+  transition: all 0.3s;
+  z-index: 9999;
+
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.dropdown-content {
+  display: none;
+  padding: 10px;
+  align-items: center;
+}
+
+.dropdown-content p {
+  margin: 0;
+  color: #FFFFFF;
+  transition: display 3s ease-in-out;
+  text-align: center;
+}
+
+.dropdown-btn.active + .dropdown-content {
+  display: block;
+}
+
+.dropdown-btn {
+  background-color: #4A67F0;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: large;
+}
+
+.dropdown-btn svg {
+  margin-right: 10px;
+  fill: #FFFFFF;
+  flex-shrink: 0; 
+}
+
+
+#sidebar {
+    background-color: #4A67F0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transition: all 3s; /* You can use "all" to transition all properties */
+  }
+
+.sairajuda {
+    position: absolute;
+    top: 1rem;
+    margin-left: 1rem;
+    background-color: #4A67F0;
+    color: white;
+    align-items: center;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  
+  .contato{
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .contato-link {
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: auto;
+  }

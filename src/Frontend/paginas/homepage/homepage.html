@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="public/styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="public/fonts/poppins.css">
+    <link rel="stylesheet" type="text/css" href="public/styles/homepage.css">
+    <title>Lumi - Homepage</title>
+</head>
+<script>
+        window.onload = function() {
+        // Verifica se o parâmetro "scroll" está presente na URL
+        var urlParams = new URLSearchParams(window.location.search);
+        var shouldScroll = urlParams.get('scroll');
+
+        if (shouldScroll === 'true') {
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+    };
+</script>
+<body>
+    <header>
+        <div class="topo">
+            <div class="logo">
+                <img src="public/assets/logo_branco.png" alt="Lumi (logo)">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./home">Home</a></li>
+                    <li><a onclick="contato()" class="contato_cursor">Contato</a></li>
+                    <li><a href="./analise">Análises</a></li>
+                    <li><a href="./relatorios">Relatórios</a></li>
+                </ul>
+            </nav>
+            <div class="icone-logout">
+                <a href="./">
+                <img src="public/assets/icone_logout.svg" alt="sair"> 
+                </a>
+            </div>
+            <button class="abreajuda" onclick="abrirajuda()">?</button>
+        </div>
+        <div class="headline">
+            <h1>Desvende os trilhos com clareza e precisão!</h1>
+        </div>
+    </header>
+    <aside id="sidebar" style="display: none;">
+      <button class="sairajuda" onclick="sairajuda()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" class="bi bi-x-lg" viewBox="0 0 16 16">
+          <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+      </svg>
+      </button>
+          <h2 class="title">Ajuda</h2>
+          <nav class="menu">
+              <hr>
+              <button class="dropdown-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#FFFFFF" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                  Para que servem as informações disponíveis no site?</button>
+              <div class="dropdown-content">
+          
+                  <p>
+                      As informações que você disponíveis na plataforma são referentes aos relatórios das viagens de vários tipos que foram realizadas. A análise das viagens pode ser utilizada para entender  o desempenho e poder agir para torná-las mais eficientes..</p>
+              </div>
+          <hr>
+          <button class="dropdown-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#FFFFFF" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+              </svg>
+              Onde eu posso encontrar as informações que preciso?</button>
+          <div class="dropdown-content">
+              <p>
+                  Todas as informações que você precisa para analisar o desempenho de suas viagens  se encontram nas seções “Análises” e “Relatórios”.  Navegando por essas seções, você pode filtrar suas viagens para ver  trajetos, gráficos e comparações.</p>
+          </div>
+          <hr>
+          <button class="dropdown-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#FFFFFF" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+              </svg>
+              Como eu faço para interagir da melhor forma com o site?</button>
+          <div class="dropdown-content">
+              <p>
+              
+              Para interagir com o site da melhor forma, leia com calma as instruções de utilização das ferramentas de análise e, caso tenha dúvidas durante a navegação pela plataforma, clique no botão ajuda (?), que se encontra no canto superior direito das páginas..</p>
+          </div>
+          <hr>
+          <button class="dropdown-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#FFFFFF" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+              </svg>
+              O que significa cada opção que encontro nos filtros de viagem, tipo de vagão e de choque?</button>
+          <div class="dropdown-content">
+              <p>
+              *ainda não sabemos a resposta, perguntaremos os detalhes nas próximas sprint reviews*
+              </p>
+          </div>
+          <hr>
+          </nav>
+          <div class="contato">
+              <a href="#" onclick="contato()" style="color:white" id="linkcontato">Entrar em Contato</a>
+          </div>
+    </aside>
+
+    <main>
+        <section class="apresentacao">
+            <div class="lado-esquerdo">
+                <div class="logo">
+                    <img src="public/assets/logo_preto.png" alt="Lumi">
+                </div>
+                <p>Experimente nossa plataforma e simplifique suas análises, otimize o sistema e garanta uma experiência de viagem <span>mais eficiente!</span></p>
+            </div>
+            <div class="lado-direito">
+                <div class="imagem">
+                    <img src="public/assets/home_primeira_imagem.png" alt="análise">
+                </div>
+            </div>
+        </section>
+        <section class="o-que-nos-oferecemos">
+            <h2>O que nós <span>oferecemos?</span></h2>
+            <div class="servicos">
+                <div class="servico">
+                    <div class="imagem">
+                        <img src="public/assets/pc-mapas.png" alt="mapas">
+                    </div>
+                    <span>Mapas</span>
+                </div>
+                <div class="servico">
+                    <div class="imagem">
+                        <img src="public/assets/pc-graficos.png" alt="mapas">
+                    </div>
+                    <span>Gráficos</span>
+                </div>
+                <div class="servico">
+                    <div class="imagem">
+                        <img src="public/assets/pc-analises.png" alt="mapas">
+                    </div>
+                    <span>Análises</span>
+                </div>
+            </div>
+            <div class="informacoes">
+                <p>
+                    Oferecemos diversas formas de analisar o seu relatório de forma dinâmica!
+                </p>
+                <a href="./analise"><button class="btnpagina">Ver análise</button></a>
+            </div>
+        </section>
+        <section class="compare-viagens">
+            <h2><span>Compare</span> as suas viagens!</h2>
+            <div class="informacoes">
+                <p>
+                    A seção “Compare viagens” permite que você analise as principais informações e os mapas com os pontos críticos de dois relatórios distintos.
+                </p>
+                <span><a href="./comparacao"><button class="btnpagina">Ver comparação</button></a></span>
+            </div>
+        </section>
+        
+        <section class="entre-em-contato">
+            <div class="lado-esquerdo">
+                <h2>Entre em <span>Contato!</span></h2>
+                <div class="imagem">
+                    <img src="public/assets/entre-em-contato.png" alt="Homem falando ao celular">
+                </div>
+            </div>
+            <div class="lado-direito" id="contato">
+                <form action="#" method="post">
+                    <input type="text" placeholder="Nome" name="nome" id="nome" required>
+                    <input type="email" placeholder="Email" name="email" id="email" required>
+                    <input type="tel" placeholder="Telefone" name="telefone" id="telefone" required>
+                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem" required></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>© 2023 Lümi Reports</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        const dropdownBtns = document.querySelectorAll('.dropdown-btn');
+
+        dropdownBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('active');
+            });
+        })
+
+        function abrirajuda(){
+            document.getElementById('sidebar').style.width = "300px"
+            document.getElementById('sidebar').style.display = "block"
+        }
+
+        function sairajuda() {
+            $("#sidebar").hide();
+        }
+
+        function contato(){
+        event.preventDefault();
+        var contato = document.getElementById("contato");
+        contato.scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>
